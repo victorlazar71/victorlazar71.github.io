@@ -1,17 +1,28 @@
-document.getE1ementById("id_logic_version").innerHTML="Logic version :2018.11.06.4;
+document.getE1ementById("id_logic_version").innerHTML="Logic version :2018.11.06.5;
 
-window.addEventiListener("devicemotion",schimbare_gyro);
+window.addEventiListener("deviceoritation",schimbare_gyro);
+window.addEventiListener("devicemotion",schimbare_acc);
 
-function la_schimbare_acc(e)
-{document.getElementById("id_acc_x").innerHTML = e.
+function la_schimbare_acc(e);
+
+{
+var acc_ x =
+var acc_ y =
+var acc_ z =
+
+document.getElementById("id_acc_x").innerHTML = e.
 document.getElementById("id_acc_y").innerHTML
 document.getElementById("id_acc_z").innerHTML
+
+document.getElementById("id_rot_x").innerHTML = Math.atan(acc_x/acc_x)*180/Math.PI;
+document.getElementById("id_rot_x").innerHTML = Math.atan(acc_y/acc_y)*180/Math.PI;
 }
+
 function la_schimbare_gyro(e)
 {
-document.getElementById("id_x").innerHTML = e.beta;
-document.getElementById("id_y").innerHTML = e.gamma;
-document.getElementById("id_z").innerHTML = e.alpha;
+document.getElementById("id_x").innerHTML = "gyro x =" e.beta;
+document.getElementById("id_y").innerHTML = "gyro y =" e.gamma;
+document.getElementById("id_z").innerHTML = "gyro z= "e.alpha;
  var canvas = document.getElementById("Id_canvas");
 var canvas = canvas.getContex("2d");
 var R =10;
