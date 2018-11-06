@@ -1,0 +1,10 @@
+document.getE1ementById("id_logic_version").innerHTML="Logic version :2018.11.06.0
+
+window.addEventiListener("deviceorientare",schimbare_gyro);
+
+function la_schimbare_gyro(e)
+{
+document.getElementById("id_x").innerHTML = e.beta;
+document.getElementById("id_y").innerHTML = e.gama;
+document.getElementById("id_z").innerHTML = e.alpha;
+}
