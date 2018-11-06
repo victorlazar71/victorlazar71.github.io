@@ -7,4 +7,10 @@ function la_schimbare_gyro(e)
 document.getElementById("id_x").innerHTML = e.beta;
 document.getElementById("id_y").innerHTML = e.gama;
 document.getElementById("id_z").innerHTML = e.alpha;
+ var canvas = document.getElementById("Id_canvas");
+var canvas = canvas.getContex("2d");
+
+context.beginPath();
+context.arc(canvas.width / 2 , canvas.height / 2, 30 , 0 , 2 * Math.PI);
+context.stroke();
 }
