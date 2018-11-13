@@ -1,18 +1,17 @@
-ducument.getElement.ById("id_logic_version").innerHTML="Logic version 2018.11.13.1";
+document.getElementById("id_logic_version").innerHTML="Logic version 2018.11.13.2";
 
-fuction on_ok(stream)
+function on_ok(stream)
 {
-ducument .getElementById("id_video").srcObject = stream ;
+document.getElementById("id_video").srcObject=stream;
 }
+//----------------------------------------------
 function on_error(e)
 {
-  //console.log("erroare camere ");
-alert("erroare camere ");
+console.log("eroare camera");
+alert("eroare camera")
 }
-
-
-function star()
+function start()
 {
-  var p =(audio:true, video:true);
-navigator.mediaDevias.getuserMedia(p).then(on_ok).catch(n_error);
+var p={audio:true, video:true};
+navigator.mediaDevices.getUserMedia(p).then(on_ok).catch(on_error);
 }
