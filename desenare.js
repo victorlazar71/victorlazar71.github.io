@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version: 2018.20.11.8";
+document.getElementById("id_logic_version").innerHTML = "Logic version: 2018.20.11.9";
 
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch);
@@ -49,6 +49,5 @@ function  on_touch_move(e)
     }
         
 }
-Sfârşitul conversaţiei
-Scrie un mesaj...
+
 
