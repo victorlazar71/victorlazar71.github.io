@@ -21,6 +21,7 @@ function on_touch(e)
 }
 
 function  on_touch_move(e)
+e.preven
 
 {
  for ( var i= 0 ; i<e.changedTouches.length; i++)
