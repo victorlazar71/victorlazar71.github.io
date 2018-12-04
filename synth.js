@@ -1,4 +1,13 @@
-document.getElementBOdy("id_logic_version").inner.html="logic version 2018.12.04"
-function afiseaza_voci ()
+document.getElementById("id_logic_version").innerHTML = "Logic version 2018.12.04.1"
+
+function afiseaza_voci()
 {
-var synth=window.Speech.
+  
+  
+ var synth = window.speechsynthesis;
+ var lista_voci = synth.getVoices();
+  
+  for (var i = 0; i <lista_voci.length; i++)
+     document.getElementById("id_voci").innerHTML += lista_voci[i].lang +" " +lista_voci[i].name + "<br>" ;
+  
+}
