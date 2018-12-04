@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version 2018.12.04.4"
+document.getElementById("id_logic_version").innerHTML = "Logic version 2018.12.04."
  var synth = window.speechSynthesis;
 
 function afiseaza_voci()
@@ -16,3 +16,5 @@ function afiseaza_voci()
  enunt.text= document.getElementById ("id_tex").value;
  enunt.lang"en-US;"
  synth.speak(enunt);
+
+}
