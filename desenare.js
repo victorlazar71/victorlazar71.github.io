@@ -15,7 +15,14 @@ var last_position = {x: 0, y: 0, id: 0};
 
 var last_position_array = [];
 
-//---------------------------------
+function genereaaza_culoare()
+{var sir "#";
+ var litere"0123456789ABCDEF";
+ for (var i=0;i<6;i++)
+ {
+	 sir+=litere[Math.ceil(Math.random()*16)];
+ 
+
 function on_touch(e)
 {
 	e.preventDefault();
@@ -33,6 +40,7 @@ function on_touch(e)
 		last_position.x = e.changedTouches.item(i).pageX;		
 		last_position.y = e.changedTouches.item(i).pageY;
 		last_position.id = e.changedTouches.item(i).identifier;
+		last_position.color=genereaza_coloare();
 		last_position_array.push(last_position);
 	}
 }
@@ -43,7 +51,6 @@ function on_touch_move(e)
 	
 	for (var i = 0; i < e.changedTouches.length; i++){
 		var context = canvas.getContext("2d");
-		context.beginPath();
 		context.lineWidth = 1;
 		context.arc(e.changedTouches.item(i).pageX - rect.left,
 					e.changedTouches.item(i).pageY - rect.top,
@@ -68,4 +75,6 @@ function on_touch_move(e)
 		last_position_array[j].y = e.changedTouches.item(i).pageY;		
 		context.stroke();			
 	}	
-}
+		context.beginPath();
+		
+	
