@@ -4,7 +4,7 @@ function afiseaza_voci()
 {
   
   
- var synth = window.speechsynthesis;
+ var synth = window.speechSynthesis;
  var lista_voci = synth.getVoices();
   
   for (var i = 0; i <lista_voci.length; i++)
