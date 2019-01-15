@@ -1,4 +1,4 @@
-document.getElementByld("id_logic_version").innerHTML = "Logic version: 2019.01.15.1";
+document.getElementByld("id_logic_version").innerHTML = "Logic version: 2019.01.15.2";
 function rezolva()
 {
 
@@ -16,5 +16,5 @@ else{
 
 
 document.getElementByld("id_x1").value=x1;
-ocument.getElementByld("id_x2").value=x2;
+document.getElementByld("id_x2").value=x2;
 }
