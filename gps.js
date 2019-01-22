@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version = 2019.01.22.1";
+document.getElementById("id_logic_version").innerHTML = "Logic version = 2019.01.22.2";
 function onSuccess(heading)
 {
     var element = document.getElementById('heading');
@@ -10,5 +10,6 @@ function onError(compassError) {
 }
 var options = {
     frequency: 500
-};
+}
+
 watchID = navigator.compass.watchHeading(onSuccess, onError, options);
