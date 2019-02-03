@@ -1,10 +1,5 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version = 2019.02.03.0";
+document.getElementById("id_logic_version").innerHTML = "Logic version = 2019.02.03.1";
 
- #compass{
-        width:100%;
-        transform-origin: 50% 50%;
-        -webkit-transform-origin: 50% 50%;
-        -moz-transform-origin: 50% 50%;
 function init() {
         var compass = document.getElementById('compass');
         if(window.DeviceOrientationEvent) {
