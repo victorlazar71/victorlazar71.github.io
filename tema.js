@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version: 2019.02.06.1";
+document.getElementById("id_logic_version").innerHTML = "Logic version: 2019.02.06.2";
 document.getElementById("id_start").addEventListener("click", get_position);
 
 //---------------------------
@@ -9,10 +9,12 @@ function get_position()
 //---------------------------
 function on_gps_ok(e)
 {
-	document.getElementById("id_lat").innerHTML = e.coords.latitude;
-	document.getElementById("id_long").innerHTML = e.coords.longitude;
-	document.getElementById("id_acc").innerHTML = e.coords.accuracy;
-        var map_str="https://maps.googleapis.com/maps/api/staticmap?"+
+	
+	 document.getElementById("id_lat").innerHTML ="Latitude="+ e.coords.latitude;
+	 document.getElementById("id_long").innerHTML ="Longitude="+ e.coords.longitude;
+	 document.getElementById("id_acc").innerHTML ="Accuracy="+ e.coords.accuracy + "m";
+	 document.getElementById("id_alt").innerHTML ="Altitude="+ e.coords.altitude + "m";
+         var map_str="https://maps.googleapis.com/maps/api/staticmap?"+
 			"center="+ e.coords.latitude + "," + e.coords.longitude +
 			"&zoom=15" +
 			"&size=400x300" +
