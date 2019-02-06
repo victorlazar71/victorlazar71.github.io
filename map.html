@@ -14,6 +14,10 @@
   </head>
   <body>
     <div id="map"></div>
+    <style type="text/css" media="screen">
+      #map { height: 180px; }
+
+      </style>
     <script>
     var mymap = L.map('map').setView([51.505, -0.09], 13);
     var marker = L.marker([51.5, -0.09]).addTo(mymap);
