@@ -16,15 +16,14 @@ function citeste()
         var a32 = document.getElementById("id_a32").value;
         var a 33 = document.getElementById("id_a33").value; 
         
-        var coeficienti = {a1:a1, a2:a2, a3:3,a11:a11, a12:a12, a13:a13, a21:a21,  a22:a22,  a23:a23,  a31:a31,  a32:a32,  a33:a33, };
+        var coeficienti = {a1:a1, a2:a2, a3:3,a11:a11, a12:a12, a13:a13, a21:a21,  a22:a22,  a23:a23,  a31:a31,  a32:a32,  a33:a33 };
 	return coeficienti;
 }
-//------------------------------
 function calculeaza(coeficienti)
 {
 	var delta = coeficienti.a11* coeficienti.a22* coeficienti.a33 + coeficienti.a21*coeficienti.a32*coeficienti.a13+coeficienti.a31*coeficienti.a12*coeficienti.a23-coeficienti.a13* coeficienti.a22* coeficienti.a31 -coeficienti.a23*coeficienti.a32*coeficienti.a11-coeficienti.a33*coeficienti.a12*coeficienti.a21;
 	
-	var x, y, z, ;
+	var x, y, z ;
 	if (delta ><0){
 		x =  (coeficienti.a1* coeficienti.a22* coeficienti.a33 + coeficienti.a2*coeficienti.a32*coeficienti.a13+coeficienti.a3*coeficienti.a12*coeficienti.a23-coeficienti.a13* coeficienti.a22* coeficienti.a3 -coeficienti.a23*coeficienti.a32*coeficienti.a1-coeficienti.a33*coeficienti.a12*coeficienti.a2)/delta;
 	
@@ -38,14 +37,13 @@ function calculeaza(coeficienti)
 	var solutii = {x: x, y:y,z:z};
 	return solutii;
 }
-//------------------------------
 function afiseaza(solutii)
 {
 	document.getElementById("id_x").innerHTML = solutii.x;
 	document.getElementById("id_y").innerHTML = solutii.y;
-        document.getElementById("id_y").innerHTML = solutii.z;
+        document.getElementById("id_z").innerHTML = solutii.z;
 }
-//------------------------------
+
 function rezolva()
 {
 	var coeficienti = citeste();
