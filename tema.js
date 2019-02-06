@@ -25,6 +25,6 @@ function on_position_success(e)
 function on_position_failure(e)
 {
 	
-	alert("M-sm pirtdut!");
+	alert("eroare!");
 	
 }
