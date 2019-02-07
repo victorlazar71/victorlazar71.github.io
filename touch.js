@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic: 2019.02.07.5";
+document.getElementById("id_logic_version").innerHTML = "Logic: 2019.02.07.6";
 var svg = document.getElementById("id_svg");
 svg.addEventListener("touchstart", on_touch_svg);
 svg.addEventListener("mousedown", on_touch_svg);
@@ -15,7 +15,7 @@ function on_touch_svg(e)
 		patrat.setAttribute("width", 50);
 		patrat.setAttribute("height", 50);
 		svg.appendChild(patrat);  // adaugare in svg ca si "copil" (subelement)
-		cub.clearRect(0, 0, 50, 50);
+		patrat.clearRect(0, 0, 50, 50);
 
 }
 }
