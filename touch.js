@@ -30,7 +30,7 @@ function on_touch_svg(e)
 		var cub = document.createElementNS("http://www.w3.org/2000/svg", "rect");	
 		cub.setAttribute("x", e.changedTouches[i].pageX);  //atributele cercului cu valorile din paranteze
 		cub.setAttribute("y", e.changedTouches[i].pageY - svg_rect.top);
-		cub.setAttribute("width", 120);
+		cub.setAttribute("width", 50);
 		cub.setAttribute("height", 50);
 		cub.setAttribute("fill", color);
 		svg.appendChild(cub);  // adaugare in svg ca si "copil" (subelement)
