@@ -2,8 +2,8 @@
 
 <html>
 <body onload="init()">
-<p id="compassContainer"> <img src="compass.jpg" id="compass"/></p>
-<p>UI version: 2019.02.08.0</p>
+<p id="compassContainer"> <img src="busola.jpg" id="busola"/></p>
+<p>UI version: 2019.02.08.1</p>
 <p id = "id_logic_version"></p>
 
 <p id = "id_lat"></p>
