@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html>
+<body onload="init()">
+<p id="compassContainer"> <img src="compass.jpg" id="compass"/></p>
+<p>UI version: 2019.02.08.0</p>
+<p id = "id_logic_version"></p>
+
+<p id = "id_lat"></p>
+<p id = "id_long"></p>
+<p id = "id_acc"></p>
+<p id = "id_alt"></p>
+<p id = "id_acc_alt"></p>
+
+<button type = "button" onclick = "get_position()">Position</button>
+
+<script src = "busola.js"></script>
+
+</body>
+</html>
