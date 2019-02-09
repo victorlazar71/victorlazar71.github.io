@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version = 2019.01.22.3";
+document.getElementById("id_logic_version").innerHTML = "Logic version = 2019.02.9.6";
 
 function init() {
         var compass = document.getElementById('compass');
@@ -6,25 +6,25 @@ function init() {
   
           window.addEventListener('deviceorientation', function(event) {
                 var alpha;
-                //Check for iOS property
+                //heck pentru proprietatea iOS
                 if(event.webkitCompassHeading) {
                   alpha = event.webkitCompassHeading;
-                  //Rotation is reversed for iOS
+                  //rotația este inversată pentru iOS
                   compass.style.WebkitTransform = 'rotate(-' + alpha + 'deg)';
                 }
-                //non iOS
+                //nu este iOS
                 else {
                   alpha = event.alpha;
                   webkitAlpha = alpha;
                   if(!window.chrome) {
-                    //Assume Android stock (this is crude, but good enough for our example) and apply offset
+                    //Să presupunem stoc Android (acest lucru este brut, dar suficient de bun pentru exemplul nostru) si aplică offset
                     webkitAlpha = alpha-270;
                   }
                 }
  
                 compass.style.Transform = 'rotate(' + alpha + 'deg)';
                 compass.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)';
-                //Rotation is reversed for FF
+                //rotația este inversată pentru FF
                 compass.style.MozTransform = 'rotate(-' + alpha + 'deg)'; 
               }, false);
         }
