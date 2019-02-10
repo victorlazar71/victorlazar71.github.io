@@ -10,7 +10,8 @@ patrat1.addEventListener("touchmove", on_touch_move1);
 patrat1.addEventListener("touchend", on_touch);
 patrat2.addEventListener("touchmove", on_touch_move2);
 patrat2.addEventListener("touchend", on_touch);
-
+patrat3.addEventListener("touchmove", on_touch_move3);
+patrat3.addEventListener("touchend", on_touch);
 var svg_rect = svg.getBoundingClientRect();
 
 function genereaza_culoare()
@@ -51,6 +52,14 @@ function on_touch_move2(e)
 	patrat2.setAttribute("fill", a);
 
 }
+function on_touch_move3(e)
+{
+	var a = genereaza_culoare();
+	e.preventDefault();
+	patrat3.setAttribute("x", e.changedTouches[0].pageX);
+	patrat3.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top);
+	patrat3.setAttribute("fill", a);
+
 
 function on_touch(e)
 {
