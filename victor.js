@@ -39,7 +39,7 @@ function on_touch_move1(e)
 	e.preventDefault();
 	patrat1.setAttribute("x", e.changedTouches[0].pageX);
 	patrat1.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top);
-	patrat1.setAttribute("fill", b);
+	patrat1.setAttribute("fill", a);
 	
 }
 
@@ -49,7 +49,7 @@ function on_touch_move2(e)
 	e.preventDefault();
 	patrat2.setAttribute("x", e.changedTouches[0].pageX);
 	patrat2.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top);
-	patrat2.setAttribute("fill", c);
+	patrat2.setAttribute("fill", a);
 
 }
 
