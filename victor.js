@@ -1,14 +1,11 @@
 
-document.getElementById("id_logic_version").innerHTML = "Logic: 2019.02.11.8";
+document.getElementById("id_logic_version").innerHTML = "Logic: 2019.02.11.9";
 var svg = document.getElementById("id_svg");
 var patrat = document.getElementById("id_patrat");
 var patrat1 = document.getElementById("id_patrat1");
 var patrat2 = document.getElementById("id_patrat2");
-var svg = document.getElementById("id_svg");
-var cerc = document.getElementById("id_circle");
 
-cerc.addEventListener("touchmove", on_touch_move);
-var svg_rect = svg.getBoundingClientRect();
+
 patrat.addEventListener("touchmove", on_touch_move);
 patrat.addEventListener("touchend", on_touch);
 patrat1.addEventListener("touchmove", on_touch_move1);
@@ -56,13 +53,6 @@ function on_touch_move2(e)
 	patrat2.setAttribute("fill", a);
 
 }
-function on_touch_move3(e)
-{
-	e.preventDefault();
-	cerc.setAttribute("cx", e.changedTouches[0].pageX);
-	cerc.setAttribute("cy", e.changedTouches[0].pageY - svg_rect.top);
-}
-
 function on_touch(e)
 {
 	alert("obiectul a fost mutat");
