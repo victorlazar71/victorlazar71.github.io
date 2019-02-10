@@ -3,6 +3,7 @@ var svg = document.getElementById("id_svg");
 var patrat = document.getElementById("id_patrat");
 var patrat1 = document.getElementById("id_patrat1");
 var patrat2 = document.getElementById("id_patrat2");
+var patrat3 = document.getElementById("id_patrat3");
 
 patrat.addEventListener("touchmove", on_touch_move);
 patrat.addEventListener("touchend", on_touch);
