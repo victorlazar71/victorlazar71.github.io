@@ -1,5 +1,5 @@
 
-document.getElementById("id_logic_version").innerHTML = "Logic: 2019.02.11.9";
+document.getElementById("id_logic_version").innerHTML = "Logic: 11.9";
 var svg = document.getElementById("id_svg");
 var patrat = document.getElementById("id_patrat");
 var patrat1 = document.getElementById("id_patrat1");
